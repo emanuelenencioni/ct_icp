@@ -1,18 +1,156 @@
-# Build files
+################################################################################
+# Build and Compilation
+################################################################################
 cmake-*
 cmake-build*
-imgui.ini
-install/*
-wandb*
+.cmake-build-superbuild/
+.cmake-build-release/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
 
-# Configuration files (e.g. idea)
-.*
+# Build output directories
+build/
+install/
+devel/
+.colcon/
 
-# shared libraries
+# Compiled binaries
 *.dll
 *.so
+*.dylib
 *.exe
+*.o
+*.a
+*.lib
 slam
+
+# CMake generated files
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+################################################################################
+# IDE and Editor
+################################################################################
+# Jetbrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+*.suo
+*.swp
+*.swo
+*~
+.vscode/
+.vscode-extensions/
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
+# Hidden files (general)
+.*
+!.gitignore
+!.github
+!.gitmodules
+
+################################################################################
+# OS-specific
+################################################################################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+################################################################################
+# Temporary and Log Files
+################################################################################
+*.log
+*.tmp
+*.temp
+*.swp
+*.bak
+*.backup
+*~
+*.orig
+
+# GUI/Visualization
+imgui.ini
+*.rviz
+GUI\ Window.conf
+
+# Weights & Biases
+wandb/
+
+################################################################################
+# ROS2 Specific
+################################################################################
+# ROS2 build/install artifacts
+devel_isolated/
+build_isolated/
+src_isolated/
+
+# ROS bag files (optional - uncomment if you want to ignore them)
+# *.db3
+# *.sqlite3
+
+# ROS node output
+*.core
+
+################################################################################
+# Data and Datasets (optional - uncomment if needed)
+################################################################################
+# Uncomment if you have large datasets:
+# data/
+# datasets/
+# *.pcd
+# *.ply
+# *.bag
+
+################################################################################
+# Python
+################################################################################
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+################################################################################
+# Testing
+################################################################################
+*.gcda
+*.gcno
+coverage/
+test_results/
+
+################################################################################
+# Docker
+################################################################################
+.dockerignore
 
 # Commit the .gitignore
 !.gitignore

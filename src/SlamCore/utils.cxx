@@ -13,6 +13,7 @@
 #define MAX_STACK_FRAMES 64
 
 #include <iostream>
+#include <array>
 #include <signal.h>
 #include <stdio.h>
 #include <assert.h>
@@ -115,7 +116,7 @@ void _posix_signal_handler(int sig, siginfo_t *siginfo, void *context) {
     _Exit(1);
 }
 
-static uint8_t alternate_stack[SIGSTKSZ];
+static uint8_t alternate_stack[65536];  // 64KB buffer for alternate stack
 
 void _setup_signal_handler() {
     {
