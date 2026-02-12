@@ -30,6 +30,7 @@ ExternalProject_Add(
         -DWITH_GLOG=ON
         -DWITH_EIGEN=ON
         -DWITH_CERES=ON
+        -DMINIGLOG=ON
         -DWITH_YAML_CPP=ON
         -DWITH_GTEST=ON
         -DWITH_TCLAP=ON
